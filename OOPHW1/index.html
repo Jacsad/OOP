@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Channel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1><img id="yt" src="yt.png">Welcome to YouTube Dashboard</h1>
+
+    <div class="state">
+        <p>App state: <strong id="app-state"></strong></p>
+        <button id="state-btn">Change state</button>
+    </div>
+
+    <div id="main">
+        <div class="choose-bloger">
+            <p id="pick-bloger">Choose bloger from the list:</p>
+            <div class="dropdown">
+                <button class="dropbtn" id="selected-bloger">Select Bloger</button>
+                <ul class="dropdown-content" id="bloger-list"></ul>
+            </div>
+        </div>
+    
+        <div class="subscribers">
+            <div class="subsribers-wrapper">
+                <div>
+                    <p>Subscribers:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>username</th>
+                                <th>displayName</th>
+                            </tr>
+                        </thead>
+                        <tbody id="subscribers-list"></tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <p>Upload new video:</p>
+                    <input id="video-url-input" type="text" placeholder="https://youtube.com/my-video-url">
+                    <button id="video-upload">Upload</button>
+                </div>
+            </div>
+    
+            <hr class="hr">
+
+            <p class="subscribe select-user">
+                Subscribe to this bloger
+            </p>
+            <div class="choose-user">
+                <p class="select-user">Choose user from the list:</p>
+                <div class="dropdown">
+                    <button class="dropbtn" id="selected-user">Select User</button>
+                    <ul class="dropdown-content" id="user-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>

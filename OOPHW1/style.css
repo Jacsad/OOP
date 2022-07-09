@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #3eb5c5;
+  width: 100vw;
+  
+}
+
+h1 #yt {
+  margin-right: 10px;
+}
+
+#main.down {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.state {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#state-btn {
+  cursor: pointer;
+  height: 30px;
+}
+
+.dropdown {position: relative;display: inline-block;}
+
+.dropbtn {background: #00bcd4;color: white;padding: 10px;font-size: 16px;border: none;cursor: pointer;}
+
+.dropdown-content {display: none;position: absolute;background: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);z-index: 1;padding: 0;margin: 0;}
+
+.dropdown-content li {color: black;padding: 12px 16px;text-decoration: none;display: block;    cursor: pointer;}
+
+.dropdown-content li:hover {background: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background: #08a2b6;
+}
+
+.subscribers {
+      margin: 30px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr, td, th {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.subsribers-wrapper {
+display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.subsribers-wrapper input {
+  padding: 5px;
+    width: 300px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.hr {
+  margin: 30px 0;
+}
+
+#pick-bloger {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.select-user {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
